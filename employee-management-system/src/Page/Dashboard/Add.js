@@ -13,7 +13,7 @@ export default function Add({ employees, setEmployees, setisAdding }) {
     textInput.current.focus();
   }, []);
 
-  const handleAdd = (e) => {
+  const handleAdd = e => {
     e.preventDefault();
     if (!firstName || !lastName || !email || !salary || !date) {
       return Swal.fire({
@@ -23,25 +23,34 @@ export default function Add({ employees, setEmployees, setisAdding }) {
         showConfirmButton: true,
       });
     }
-    // Add employee logic here
+    const id=employees.length+1;
+  
     const newEmployee = {
+      id,
       firstName,
       lastName,
       email,
       salary,
       date,
-    };
-    setEmployees([...employees, newEmployee]);
+    }
+    employees.push(newEmployee);
+    setEmployees(employees);
     setisAdding(false);
+
+    Swal.fire({
+      icon:'success',
+      title:"Added successfully",
+      text:`${firstName} ${lastName} has been added to the list`,
+      showConfirmButton:false,
+      timer:1000
+    })
   };
 
-  const handleCancel = () => {
-    setisAdding(false);
-  };
   return (
     <div classNmae="small-container">
       <form onSubmit={handleAdd}>
         <h1>Add Employee</h1>
+        
         <label htmlFor="firstName">First Name</label>
         <input
         id="firstName"
@@ -50,14 +59,15 @@ export default function Add({ employees, setEmployees, setisAdding }) {
         name="firstName"
         value={firstName}
         onChange={e=>setFirstName(e.target.value)}/>
+
         <label htmlFor="lastName">Last Name</label>
         <input
-        id="lastName"
-        type="text"
-        name="lastName"
-        value={lastName}
-        onChange={e=>setLastName(e.target.value)}
-        />
+         id="lastName"
+         type="text"
+         name="lastName"
+         value={lastName}
+         onChange={e => setLastName(e.target.value)}/>   
+
         <label htmlFor="email">Email</label>
         <input
         id="email"
@@ -65,6 +75,7 @@ export default function Add({ employees, setEmployees, setisAdding }) {
         name="email"
         value={email}
         onChange={e=>setEmail(e.target.value)}/>
+
         <label htmlFor="salary">Salary</label>
         <input
         id="salary" 

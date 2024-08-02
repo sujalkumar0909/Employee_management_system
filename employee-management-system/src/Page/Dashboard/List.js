@@ -7,19 +7,13 @@ export default function List({employees,handleEdit,handleDelete})
     currency:'USD',
     minimumractionDigits:null
   });
-  const handleEditClick = (id) => {
-    handleEdit(id)
-  }
 
-  const handleDeleteClick = (id) => {
-    handleDelete(id)
-  }
   return (
     <div className='contain-table'>
       <table className='striped-table'>
         <thead>
           <tr>
-            <th>no.</th>
+            <th>No.</th>
             <th>First name</th>
             <th>Last name</th>
             <th>Email</th>
@@ -36,7 +30,7 @@ export default function List({employees,handleEdit,handleDelete})
                 <tr key={employee.id}>
                   <td>{i+1}</td>
                   <td>{employee.firstName}</td>
-                  <td>{employee.lastname}</td>
+                  <td>{employee.lastName}</td>
                   <td>{employee.email}</td>
                   <td>{formatter.format(employee.salary)}</td>
                   <td>{employee.date}</td>

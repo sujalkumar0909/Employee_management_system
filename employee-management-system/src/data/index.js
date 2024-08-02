@@ -2,7 +2,7 @@ const employeesData=[
     {
         id:1,
         firstName:'Sujal',
-        lastname:'Kumar',
+        lastName:'Kumar',
         email:'sujal@gmail.com',
         salary:'100000',
         date:'2024-11-30'
@@ -10,7 +10,7 @@ const employeesData=[
     {
         id:2,
         firstName:'Raju',
-        lastname:'Kumar',
+        lastName:'Kumar',
         email:'raju@gmail.com',
         salary:'90900',
         date:'2024-12-30'
@@ -18,7 +18,7 @@ const employeesData=[
     {
         id:3,
         firstName:'Ayush',
-        lastname:'Kumar',
+        lastName:'Kumar',
         email:'ayush@gmail.com',
         salary:'100000',
         date:'2024-02-23'
@@ -26,7 +26,7 @@ const employeesData=[
     {
         id:4,
         firstName:'Sujal',
-        lastname:'Kumar',
+        lastName:'Kumar',
         email:'sujal@gmail.com',
         salary:'100000',
         date:'2024-11-30'
@@ -34,7 +34,7 @@ const employeesData=[
     {
         id:5,
         firstName:'Sujal',
-        lastname:'Kumar',
+        lastName:'Kumar',
         email:'sujal@gmail.com',
         salary:'100000',
         date:'2024-11-30'
@@ -42,7 +42,7 @@ const employeesData=[
     {
         id:6,
         firstName:'Sujal',
-        lastname:'Kumar',
+        lastName:'Kumar',
         email:'sujal@gmail.com',
         salary:'100000',
         date:'2024-11-30'
@@ -50,7 +50,7 @@ const employeesData=[
     {
         id:7,
         firstName:'Sujal',
-        lastname:'Kumar',
+        lastName:'Kumar',
         email:'sujal@gmail.com',
         salary:'100000',
         date:'2024-11-30'
@@ -58,7 +58,7 @@ const employeesData=[
     {
         id:8,
         firstName:'Sujal',
-        lastname:'Kumar',
+        lastName:'Kumar',
         email:'sujal@gmail.com',
         salary:'100000',
         date:'2024-11-30'
@@ -66,7 +66,7 @@ const employeesData=[
     {
         id:9,
         firstName:'Sujal',
-        lastname:'Kumar',
+        lastName:'Kumar',
         email:'sujal@gmail.com',
         salary:'100000',
         date:'2024-11-30'
@@ -74,7 +74,7 @@ const employeesData=[
     {
         id:10,
         firstName:'Sujal',
-        lastname:'Kumar',
+        lastName:'Kumar',
         email:'sujal@gmail.com',
         salary:'100000',
         date:'2024-11-30'
@@ -82,7 +82,7 @@ const employeesData=[
     {
         id:11,
         firstName:'Sujal',
-        lastname:'Kumar',
+        lastName:'Kumar',
         email:'sujal@gmail.com',
         salary:'100000',
         date:'2024-11-30'
