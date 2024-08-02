@@ -40,7 +40,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
         setIsAdding(false);
 
         Swal.fire({
-            icon: 'success',
+            icon: 'Success',
             title: 'Added!',
             text: `${firstName} ${lastName}'s data has been Added.`,
             showConfirmButton: false,

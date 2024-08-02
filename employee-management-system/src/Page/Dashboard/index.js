@@ -28,8 +28,9 @@ function Dashboard() {
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
             showCancelButton: true,
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'No, cancel!',
+            confirmButtonText: 'Delete',
+            cancelButtonText: 'Cancel',
+            cancelButtonColor: '#d33',
         }).then(result => {
             if (result.value) {
                 const [employee] = employees.filter(employee => employee.id === id);
